@@ -1,0 +1,18 @@
+
+
+type Query {
+  featuredListings: [Listing!]!
+}
+
+"A particular intergalactic location available for booking"
+type Listing {
+    id: ID!
+     "The listing's title"
+    title: String!
+    "The number of beds available"
+    numOfBeds: Int
+    "cost per night"
+    costPerNight: Int
+    "SOS"
+    closedForBookings: Boolean
+}
